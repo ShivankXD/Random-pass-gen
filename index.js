@@ -6,8 +6,8 @@ function generatePassword(length,includeLowercase,includeUppercase,includeNumber
     let allowedChars="";
     let password="";
 
-    allowedChars+=includeLowercase? lowercaseChars:""; //if includeLowercase is true (ternary operator case) lowercase will be included in string 
-    allowedChars+=includeUppercase?uppercaseChars:"";//-otherwise "" will be included
+    allowedChars+=includeLowercase? lowercaseChars:"";
+    allowedChars+=includeUppercase?uppercaseChars:"";
     allowedChars+=includeNumbers?numberChars:"";
     allowedChars+=includeSymbols?symbolChars:"";
     if(length<=0){
